@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: #e8e6e1;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            padding: 60px;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 60px;
+            top: 60px;
+        }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-bottom: 12px;
+        }
+
+        .nav-menu a {
+            color: #5a5a5a;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #2a2a2a;
+        }
+
+        .nav-menu a.active {
+            color: #2a2a2a;
+            font-weight: 500;
+        }
+
+        .content {
+            margin-left: 400px;
+            max-width: 700px;
+            padding-top: 40px;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #5a5a5a;
+        }
+
+        a.link {
+            color: #5a7a8a;
+            text-decoration: none;
+            border-bottom: 1px solid #5a7a8a;
+        }
+
+        a.link:hover {
+            color: #3a5a6a;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .project-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d0cec9;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #4a4a4a;
+        }
+
+        .interest-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .interest-list li {
+            padding: 10px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #d0cec9;
+        }
+
+        .question {
+            background: #f5f4f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        @media (max-width: 968px) {
+            .container {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .sidebar {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 40px;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="your-image.jpg" alt="Profile Photo" class="profile-image">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link" data-section="home">your name</a></li>
+                    <li><a href="#biography" class="nav-link" data-section="biography">biography</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">projects</a></li>
+                    <li><a href="#interests" class="nav-link" data-section="interests">interests</a></li>
+                    <li><a href="#questions" class="nav-link" data-section="questions">current big questions</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <h1>your name</h1>
+            </section>
+
+            <!-- Biography Section -->
+            <section id="biography" class="content-section">
+                <h2>biography</h2>
+                <p>Write your biography here. Tell your story, what you do, what drives you, and what makes you unique.</p>
+                <p>Add more paragraphs as needed to fully express your background, experience, and passions.</p>
+                <p>You can include links to <a href="#" class="link">important projects</a> or <a href="#" class="link">organizations</a> you're involved with.</p>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h2>projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-title">Project Name One</div>
+                    <p>Description of your first project. What it is, why it matters, and what you accomplished.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">Project Name Two</div>
+                    <p>Description of your second project. Include relevant details and links if applicable.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">Project Name Three</div>
+                    <p>Description of your third project. Add as many projects as you'd like.</p>
+                </div>
+            </section>
+
+            <!-- Interests Section -->
+            <section id="interests" class="content-section">
+                <h2>interests</h2>
+                <ul class="interest-list">
+                    <li>Interest or hobby one</li>
+                    <li>Interest or hobby two</li>
+                    <li>Interest or hobby three</li>
+                    <li>Interest or hobby four</li>
+                    <li>Interest or hobby five</li>
+                </ul>
+            </section>
+
+            <!-- Current Big Questions Section -->
+            <section id="questions" class="content-section">
+                <h2>current big questions</h2>
+                
+                <div class="question">
+                    <p>What is your first big question? Frame it in a way that shows what you're currently exploring or thinking about.</p>
+                </div>
+
+                <div class="question">
+                    <p>What is your second big question? These can be philosophical, practical, or related to your work.</p>
+                </div>
+
+                <div class="question">
+                    <p>What is your third big question? This section adds a personal and thoughtful dimension to your site.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2>contact</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com" class="link">your.email@example.com</a></p>
+                    <p><strong>Twitter:</strong> <a href="https://twitter.com/yourhandle" class="link" target="_blank">@yourhandle</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" class="link" target="_blank">Your Name</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" class="link" target="_blank">yourusername</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Navigation functionality
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.content-section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all links and sections
+                navLinks.forEach(l => l.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Show corresponding section
+                const sectionId = link.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
