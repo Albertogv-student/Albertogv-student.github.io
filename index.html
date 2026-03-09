@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Alberto Garcia Vazquez</title>
+    <!-- retro 8-bit font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,8 +16,8 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background-color: #e8e6e1;
-            color: #4a4a4a;
+            background-color: #322c1b;
+            color: #a29e9e;
             line-height: 1.6;
         }
 
@@ -47,7 +50,7 @@
         }
 
         .nav-menu a {
-            color: #5a5a5a;
+            color: #c2c0c0;
             text-decoration: none;
             font-size: 20px;
             cursor: pointer;
@@ -55,11 +58,11 @@
         }
 
         .nav-menu a:hover {
-            color: #2a2a2a;
+            color: #9c9b9b;
         }
 
         .nav-menu a.active {
-            color: #2a2a2a;
+            color: #9c9b9b;
             font-weight: 500;
         }
 
@@ -78,11 +81,22 @@
             display: block;
         }
 
+        /* 8-bit retro styling */
+        .retro {
+            font-family: 'Press Start 2P', monospace;
+            background-color: #000;
+            color: #0f0;
+            text-shadow: 1px 1px 0 #fff;
+            /* make sure any images or elements appear pixelated */
+            image-rendering: pixelated;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -91,14 +105,14 @@
 
         h1 {
             font-size: 48px;
-            color: #4a4a4a;
+            color: #8c8b8b;
             margin-bottom: 40px;
             font-weight: 400;
         }
 
         h2 {
             font-size: 32px;
-            color: #4a4a4a;
+            color: #8c8b8b;
             margin-bottom: 30px;
             font-weight: 400;
         }
@@ -106,7 +120,7 @@
         p {
             font-size: 18px;
             margin-bottom: 20px;
-            color: #5a5a5a;
+            color: #9c9b9b;
         }
 
         a.link {
@@ -182,6 +196,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <aside class="sidebar">
@@ -207,57 +222,53 @@
             <!-- Biography Section -->
             <section id="biography" class="content-section">
                 <h2>biography</h2>
-                <p>Write your biography here. Tell your story, what you do, what drives you, and what makes you unique.</p>
-                <p>Add more paragraphs as needed to fully express your background, experience, and passions.</p>
-                <p>You can include links to <a href="#" class="link">important projects</a> or <a href="#" class="link">organizations</a> you're involved with.</p>
+                <p>Hello, if your reading this that hopefully means your curious about me. Well I'm alberto, im the guy
+                    in the picture on the left. I am currently a Sophomore @ Bowdoin College in Maine. I am studying
+                    computer science and Digital Computational Studies. </p>
+                <p>I wanted to set up this site as my own little home for questions and new things I want to learn, so
+                    that I can keep track. I also thought it may be good to showcase some of my work, which I will add
+                    as I go!</p>
+
             </section>
 
             <!-- Projects Section -->
             <section id="projects" class="content-section">
-                <h2>projects</h2>
-                
-                <div class="project-item">
-                    <div class="project-title">Project Name One</div>
-                    <p>Description of your first project. What it is, why it matters, and what you accomplished.</p>
-                </div>
+                <h2>go to my github for now :0</h2>
 
-                <div class="project-item">
-                    <div class="project-title">Project Name Two</div>
-                    <p>Description of your second project. Include relevant details and links if applicable.</p>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-title">Project Name Three</div>
-                    <p>Description of your third project. Add as many projects as you'd like.</p>
-                </div>
+               
             </section>
 
             <!-- Interests Section -->
             <section id="interests" class="content-section">
                 <h2>interests</h2>
                 <ul class="interest-list">
-                    <li>Interest or hobby one</li>
-                    <li>Interest or hobby two</li>
-                    <li>Interest or hobby three</li>
-                    <li>Interest or hobby four</li>
-                    <li>Interest or hobby five</li>
+                    <li>Networks and graphs, specifically exploring the way to model the edges and or distances</li>
+                    <li>MAX-music coding</li>
+                    <li>Where to get started with learning Distributed Systems basics</li>
+                    <li></li>
+                    <li>Currently trying to learn how to handstand</li>
                 </ul>
             </section>
 
             <!-- Current Big Questions Section -->
             <section id="questions" class="content-section">
                 <h2>current big questions</h2>
-                
+
                 <div class="question">
-                    <p>What is your first big question? Frame it in a way that shows what you're currently exploring or thinking about.</p>
+                    <p>
+                        What AI tools is Meta's Encodec using to compress audio files, and how does it work?
+                    </p>
                 </div>
 
                 <div class="question">
-                    <p>What is your second big question? These can be philosophical, practical, or related to your work.</p>
+                    <p>Whats the right balance of theoretical and applicational skills?</p>
                 </div>
 
                 <div class="question">
-                    <p>What is your third big question? This section adds a personal and thoughtful dimension to your site.</p>
+                    <p>For a network such as different pieces of music, if we were to express them as a network, how
+                        many dimensions could we make it? Or am I thinking about it completely wrong, and instead there
+                        should be multiple nodes that we can arrange based off the parameters and dimensions we have?
+                    </p>
                 </div>
             </section>
 
@@ -266,9 +277,11 @@
                 <h2>contact</h2>
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:your.agarciavazquez@bowdoin.edu" class="link">me</a></p>
-                    
-                    <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/albertogarciavazquez" class="link" target="_blank">Professional</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/Albertogv-student" class="link" target="_blank">code</a></p>
+
+                    <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/albertogarciavazquez" class="link"
+                            target="_blank">Professional</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/Albertogv-student" class="link"
+                            target="_blank">code</a></p>
                 </div>
             </section>
         </main>
@@ -282,19 +295,28 @@
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                
+
                 // Remove active class from all links and sections
                 navLinks.forEach(l => l.classList.remove('active'));
                 sections.forEach(s => s.classList.remove('active'));
-                
+                // remove retro styling by default
+                document.getElementById('biography').classList.remove('retro');
+
                 // Add active class to clicked link
                 link.classList.add('active');
-                
+
                 // Show corresponding section
                 const sectionId = link.getAttribute('data-section');
-                document.getElementById(sectionId).classList.add('active');
+                const section = document.getElementById(sectionId);
+                section.classList.add('active');
+
+                // if the biography tab, apply retro style
+                if (sectionId === 'biography') {
+                    section.classList.add('retro');
+                }
             });
         });
     </script>
 </body>
+
 </html>
