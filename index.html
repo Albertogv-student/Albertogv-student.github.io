@@ -84,11 +84,35 @@
         /* 8-bit retro styling */
         .retro {
             font-family: 'Press Start 2P', monospace;
-            background-color: #000;
+            background-color: #322c1b;
             color: #0f0;
             text-shadow: 1px 1px 0 #fff;
             /* make sure any images or elements appear pixelated */
             image-rendering: pixelated;
+        }
+
+        /* floating sprite animation */
+        #sprite {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+            animation: bob 2s ease-in-out infinite;
+            z-index: 1000;
+        }
+
+        @keyframes bob {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         @keyframes fadeIn {
@@ -216,7 +240,7 @@
         <main class="content">
             <!-- Home Section -->
             <section id="home" class="content-section active">
-                <h1>your name</h1>
+                <h1>Alberto Garcia Vazquez</h1>
             </section>
 
             <!-- Biography Section -->
@@ -235,7 +259,7 @@
             <section id="projects" class="content-section">
                 <h2>go to my github for now :0</h2>
 
-               
+
             </section>
 
             <!-- Interests Section -->
@@ -286,6 +310,11 @@
             </section>
         </main>
     </div>
+
+    <!-- floating 8-bit sprite -->
+    <img id="sprite"
+        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' fill='%23000'/><rect x='8' y='8' width='16' height='16' fill='%230f0'/></svg>"
+        alt="sprite">
 
     <script>
         // Navigation functionality
